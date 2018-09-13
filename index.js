@@ -1,9 +1,9 @@
 const API_KEY = "API_KEY_HERE";
 
-window.onload = () => {
+document.addEventListener("DOMContentLoaded", () => {
   const url = `https://api.harvardartmuseums.org/gallery?apikey=${API_KEY}`;
   showGalleries(url);
-}
+});
 
 function showGalleries(url) {
   fetch(url)
