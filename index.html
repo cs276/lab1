@@ -7,13 +7,32 @@
     </head>
     <body>
         <h1 class="title">Harvard Art Museums</h1>
+        <input id="search-field" type="text">
+        <button id="search">Search</button>
+        <div id="all-objects" style="display:none">
+            <h2>Objects</h2>
+            <button id="hide-objects">Back to Galleries</button>
+            <table>
+                <thead>
+                    <th>Name</th>
+                    <th>Image</th>
+                    <th>People</th>
+                    <th>URL</th>
+                </thead>
+                <tbody id="objects">
+                </tbody>
+            </table>
+        </div>
         <div id="all-galleries">
             <h2>Galleries</h2>
             <ul id="galleries">
             </ul>
         </div>
-        <div id="all-objects" style="display:none">
-            <h2>Objects: TODO</h2>
+        <div id="object-details" style="display:none">
+            <h2>Object</h2>
+            <button id="hide-object">Back to Objects</button>
+            <div id="object">
+            </div>
         </div>
     </body>
 </html>
